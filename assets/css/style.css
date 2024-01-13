@@ -1104,3 +1104,40 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+
+/* TECNOLOGIAS */
+
+#tecnologiasContainer{
+  margin-bottom: 15rem;
+}
+
+.tecnologias img {
+  width: 7rem;
+  margin: 1rem;
+}
+
+.tecnologias img:hover {
+
+}
+
+@media screen  and ( max-width: 1000px){
+
+  #tecnologiasContainer{
+      margin-bottom: 7rem;
+  }
+
+  .tecnologias img {
+      width: 4rem !important;
+
+  }
+
+  .tecnologias{
+      width: 20rem;
+  }
+}
+
+
+.icons-app {
+  display: block;
+}
