@@ -40,7 +40,8 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 25px; /*Ubicación en pantalla*/
+  right: 25px;
+  /*Ubicación en pantalla*/
   bottom: 80px;
   z-index: 996;
   background: #149ddd;
@@ -1105,39 +1106,27 @@ section {
   }
 }
 
-
-/* TECNOLOGIAS */
-
-#tecnologiasContainer{
-  margin-bottom: 15rem;
+ /* Estilos personalizados si es necesario */
+ .session-container {
+  margin-bottom: 20px;
 }
 
-.tecnologias img {
-  width: 7rem;
-  margin: 1rem;
-}
-
-.tecnologias img:hover {
+/* Centrar el contenido en pantalla */
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
-@media screen  and ( max-width: 1000px){
-
-  #tecnologiasContainer{
-      margin-bottom: 7rem;
-  }
-
-  .tecnologias img {
-      width: 4rem !important;
-
-  }
-
-  .tecnologias{
-      width: 20rem;
-  }
-}
-
-
-.icons-app {
+/* Evitar que las imágenes se rompan en una línea */
+.session-container img {
   display: block;
+  margin: 10px; /* Añadir espacio entre las imágenes */
+  transition: transform 0.3s; /* Agregar transición para suavizar el efecto hover */
+}
+
+/* Efecto hover */
+.session-container img:hover {
+  transform: scale(1.1); /* Escalar la imagen en un 10% al hacer hover */
 }
