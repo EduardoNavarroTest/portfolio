@@ -1,11 +1,4 @@
-/**
-* Template Name: iPortfolio
-* Updated: Nov 17 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -91,7 +84,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('body').classList.toggle('mobile-nav-active')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -100,7 +93,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -150,7 +143,7 @@
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
+      handler: function (direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
@@ -171,9 +164,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -181,7 +174,7 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
+        portfolioIsotope.on('arrangeComplete', function () {
           AOS.refresh()
         });
       }, true);
@@ -258,5 +251,100 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
+  // Obtener referencias a las imágenes por sus IDs
+  const html = document.getElementById("html");
+  const css = document.getElementById("css");
+  const javascript = document.getElementById("javascript");
+  const react = document.getElementById("react");
+  const boostrap = document.getElementById("boostrap");
+  const sass = document.getElementById("sass");
+  const java = document.getElementById("java");
+  const python = document.getElementById("python");
+  const visual = document.getElementById("visual-basic");
+  const sql = document.getElementById("sql");
+  const git = document.getElementById("git");
+  const jira = document.getElementById("jira");
+  const bitbucket = document.getElementById("bitbucket");
+  const testcomplete = document.getElementById("testcomplete");
+  const selenium = document.getElementById("selenium");
+
+  // Asignar manejadores de eventos a cada imagen
+  html.addEventListener("click", function () {
+    updateProgress("HTML", 80);
+  });
+
+  css.addEventListener("click", function () {
+    updateProgress("CSS", 70);
+  });
+
+  javascript.addEventListener("click", function () {
+    updateProgress("JavaScript", 85);
+  });
+
+  react.addEventListener("click", function () {
+    updateProgress("React", 50);
+  });
+
+  boostrap.addEventListener("click", function () {
+    updateProgress("Boostrap", 60);
+  });
+
+  sass.addEventListener("click", function () {
+    updateProgress("SASS", 70);
+  });
+
+  java.addEventListener("click", function () {
+    updateProgress("Java", 60);
+  });
+
+  python.addEventListener("click", function () {
+    updateProgress("Python", 40);
+  });
+
+  visual.addEventListener("click", function () {
+    updateProgress("Visual Basic", 80);
+  });
+
+  sql.addEventListener("click", function () {
+    updateProgress("SQL", 90);
+  });
+
+  git.addEventListener("click", function () {
+    updateProgress("GIT", 85);
+  });
+
+  jira.addEventListener("click", function () {
+    updateProgress("Jira", 90);
+  });
+
+  bitbucket.addEventListener("click", function () {
+    updateProgress("Bitbucket", 80);
+  });
+
+  testcomplete.addEventListener("click", function () {
+    updateProgress("TestComplete", 95);
+  });
+
+  selenium.addEventListener("click", function () {
+    updateProgress("Selenium", 60);
+  });
+
+ 
 
 })()
+
+
+function updateProgress(app, progressVal) {
+
+  porcentaje = Math.min(100, Math.max(0, progressVal));
+
+  document.getElementById("name-app").textContent = app;
+  document.getElementById("val-app").textContent = progressVal + '%';
+  let barra = document.getElementById("barraProgresoInterior");
+
+
+  barra.style.width = progressVal + "%";
+ 
+}
+
+
