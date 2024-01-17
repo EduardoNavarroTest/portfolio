@@ -3,3 +3,11 @@ Do not hesitate to contact me
 
 Linkedin: https://www.linkedin.com/in/eduardonavarroecheverria/
 Whatsapp: https://api.whatsapp.com/send?phone=573135880136
+
+
+
+Pendientes:
+Curriculum
+Portafolio
+Arreglar envio email
+Arreglar inteligencia artificial
