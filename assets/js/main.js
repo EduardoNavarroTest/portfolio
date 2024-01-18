@@ -270,7 +270,7 @@
 
   // Asignar manejadores de eventos a cada imagen
   html.addEventListener("click", function () {
-    updateProgress("HTML", 80);
+    updateProgress("HTML", 70);
   });
 
   css.addEventListener("click", function () {
@@ -290,15 +290,15 @@
   });
 
   sass.addEventListener("click", function () {
-    updateProgress("SASS", 70);
+    updateProgress("SASS", 60);
   });
 
   java.addEventListener("click", function () {
-    updateProgress("Java", 60);
+    updateProgress("Java", 50);
   });
 
   python.addEventListener("click", function () {
-    updateProgress("Python", 40);
+    updateProgress("Python", 30);
   });
 
   visual.addEventListener("click", function () {
@@ -306,11 +306,11 @@
   });
 
   sql.addEventListener("click", function () {
-    updateProgress("SQL", 90);
+    updateProgress("SQL", 95);
   });
 
   git.addEventListener("click", function () {
-    updateProgress("GIT", 85);
+    updateProgress("GIT", 90);
   });
 
   jira.addEventListener("click", function () {
@@ -326,7 +326,7 @@
   });
 
   selenium.addEventListener("click", function () {
-    updateProgress("Selenium", 60);
+    updateProgress("Selenium", 50);
   });
 
  
