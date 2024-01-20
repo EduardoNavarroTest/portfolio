@@ -278,8 +278,8 @@
     category: "Web App",
     client: "NA - Uso personal",
     projectDate: "01/01/2024",
-    urlFront: "https://colombia-navarro.vercel.app/",
-    urlBack: "https://github.com/EduardoNavarroTest/PreEntrega2-Navarro",
+    urlFront: "https://colombia-navarro.vercel.app",
+    urlBack: "https://github.com/EduardoNavarroTest/web-desarrollo",
     technologies: "HTML, CSS, Boostrap, SASS",
     description: "Página web basada en el turismo en Colombia, desarrollada como proyecto final para el curso 'Desarrollo Web' en Coderhouse. \n Para esta página se utilizaron tecnologías como HTML, CSS, Boostrap y SASS."
   }
@@ -295,9 +295,9 @@
     category: "Web App",
     client: "NA - Uso personal",
     projectDate: "24/02/2024",
-    urlFront: "https://eduardonavarrotest.github.io/js-coder/index.html",
+    urlFront: "https://eduardonavarrotest.github.io/js-coder",
     urlBack: "https://github.com/EduardoNavarroTest/js-coder",
-    technologies: "HTML, CSS, JavaScript, Boostrap, SASS",
+    technologies: "HTML, CSS, JavaScript, Boostrap",
     description: "Página web interactiva que simula la renta de Autos y Motos de lujo. Desarrollada como proyecto final para el curso 'JavaScript' en Coderhouse."
   }
 
@@ -308,7 +308,43 @@
     if (selectedOption) {
       console.log('Opción seleccionada:', selectedOption);
       let elemento = document.getElementById('informacionContainer');
-      elemento.innerHTML = 'Contenido basado en la opción seleccionada: ' + selectedOption;
+
+
+      switch (selectedOption) {
+        case "colombia":
+          document.getElementById("title").innerText = objColombia.title;
+          document.getElementById("category").innerText = objColombia.category;
+          document.getElementById("category").innerText = objColombia.category;
+          document.getElementById("technologies").innerText = objColombia.technologies;
+          document.getElementById("client").innerText = objColombia.client;
+          document.getElementById("projectDate").innerText = objColombia.projectDate;
+          document.getElementById("urlFront").innerText = objColombia.urlFront;
+          document.getElementById("urlFront").href = objColombia.urlFront;
+          document.getElementById("urlBack").innerText = objColombia.urlBack;
+          document.getElementById("urlBack").href = objColombia.urlBack;
+          document.getElementById("description").innerText = objColombia.description;
+          document.getElementById("").innerText = objColombia.img.img1;
+          document.getElementById("").innerText = objColombia.img.img2;
+          document.getElementById("").innerText = objColombia.img.img3;
+
+          break;
+        case "rentiautos":
+          document.getElementById("title").innerText = objRentiAutos.title;
+          document.getElementById("category").innerText = objRentiAutos.category;
+          document.getElementById("technologies").innerText = objRentiAutos.technologies;
+          document.getElementById("client").innerText = objRentiAutos.client;
+          document.getElementById("projectDate").innerText = objRentiAutos.projectDate;
+          document.getElementById("urlFront").innerText = objRentiAutos.urlFront;
+          document.getElementById("urlFront").href = objRentiAutos.urlFront;
+          document.getElementById("urlBack").innerText = objRentiAutos.urlBack;
+          document.getElementById("urlFront").href = objRentiAutos.urlFront;
+          document.getElementById("description").innerText = objRentiAutos.description;
+          document.getElementById("").innerText = objColombia.img.img1;
+          document.getElementById("").innerText = objColombia.img.img2;
+          document.getElementById("").innerText = objColombia.img.img3;
+          break;
+      }
+
     }
   });
 

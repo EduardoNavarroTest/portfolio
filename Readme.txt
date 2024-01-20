@@ -8,7 +8,7 @@ Whatsapp: https://api.whatsapp.com/send?phone=573135880136
 
 Pendientes:
 
-Portafolio
+Portafolio solo seguna página para arreglar las imagenes
 Arreglar envio email
 Arreglar inteligencia artificial
 Footer de todas las 3 páginas
