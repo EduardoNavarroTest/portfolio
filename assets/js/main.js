@@ -251,6 +251,68 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
+
+
+
+
+  /*Send info more details portfolio*/
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var portfolioLinks = document.querySelectorAll('.portfolio-links #sendDetailsPortfolio');
+    portfolioLinks.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        var opcion = link.getAttribute('data-opcion');
+        localStorage.setItem('selectedOption', opcion);
+      });
+    });
+  });
+
+
+  const objColombia = {
+    title: "Travel Colombia",
+    img: {
+      img1: "",
+      img2: "",
+      img3: "",
+    },
+    category: "Web App",
+    client: "NA - Uso personal",
+    projectDate: "01/01/2024",
+    urlFront: "https://colombia-navarro.vercel.app/",
+    urlBack: "https://github.com/EduardoNavarroTest/PreEntrega2-Navarro",
+    technologies: "HTML, CSS, Boostrap, SASS",
+    description: "Página web basada en el turismo en Colombia, desarrollada como proyecto final para el curso 'Desarrollo Web' en Coderhouse. \n Para esta página se utilizaron tecnologías como HTML, CSS, Boostrap y SASS."
+  }
+
+
+  const objRentiAutos = {
+    title: "RentiAutos",
+    img: {
+      img1: "",
+      img2: "",
+      img3: "",
+    },
+    category: "Web App",
+    client: "NA - Uso personal",
+    projectDate: "24/02/2024",
+    urlFront: "https://eduardonavarrotest.github.io/js-coder/index.html",
+    urlBack: "https://github.com/EduardoNavarroTest/js-coder",
+    technologies: "HTML, CSS, JavaScript, Boostrap, SASS",
+    description: "Página web interactiva que simula la renta de Autos y Motos de lujo. Desarrollada como proyecto final para el curso 'JavaScript' en Coderhouse."
+  }
+
+  /** Recuperar la opción seleccionada del portfolio */
+  document.addEventListener('DOMContentLoaded', function () {
+
+    var selectedOption = localStorage.getItem('selectedOption');
+    if (selectedOption) {
+      console.log('Opción seleccionada:', selectedOption);
+      let elemento = document.getElementById('informacionContainer');
+      elemento.innerHTML = 'Contenido basado en la opción seleccionada: ' + selectedOption;
+    }
+  });
+
+
   // Obtener referencias a las imágenes por sus IDs
   const html = document.getElementById("html");
   const css = document.getElementById("css");
@@ -270,7 +332,7 @@
 
   // Asignar manejadores de eventos a cada imagen
   html.addEventListener("click", function () {
-    updateProgress("HTML", 70);
+    updateProgress("HTML", 80);
   });
 
   css.addEventListener("click", function () {
@@ -286,7 +348,7 @@
   });
 
   boostrap.addEventListener("click", function () {
-    updateProgress("Boostrap", 60);
+    updateProgress("Boostrap", 70);
   });
 
   sass.addEventListener("click", function () {
@@ -329,7 +391,7 @@
     updateProgress("Selenium", 50);
   });
 
- 
+
 
 })()
 
@@ -344,7 +406,7 @@ function updateProgress(app, progressVal) {
 
 
   barra.style.width = progressVal + "%";
- 
+
 }
 
 
