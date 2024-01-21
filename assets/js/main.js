@@ -271,9 +271,9 @@
   const objColombia = {
     title: "Travel Colombia",
     img: {
-      img1: "",
-      img2: "",
-      img3: "",
+      img1: "./assets/img/portfolio/colombia-details.png",
+      img2: "./assets/img/portfolio/colombia-details2.png",
+      img3: "./assets/img/portfolio/web-colombia.png",
     },
     category: "Web App",
     client: "NA - Uso personal",
@@ -288,9 +288,9 @@
   const objRentiAutos = {
     title: "RentiAutos",
     img: {
-      img1: "",
-      img2: "",
-      img3: "",
+      img1: "./assets/img/portfolio/renti-details.png",
+      img2: "./assets/img/portfolio/renti-details2.png",
+      img3: "./assets/img/portfolio/renti-details3.png",
     },
     category: "Web App",
     client: "NA - Uso personal",
@@ -323,9 +323,9 @@
           document.getElementById("urlBack").innerText = objColombia.urlBack;
           document.getElementById("urlBack").href = objColombia.urlBack;
           document.getElementById("description").innerText = objColombia.description;
-          document.getElementById("").innerText = objColombia.img.img1;
-          document.getElementById("").innerText = objColombia.img.img2;
-          document.getElementById("").innerText = objColombia.img.img3;
+          document.getElementById("imgDetails1").src = objColombia.img.img1;
+          document.getElementById("imgDetails2").src = objColombia.img.img2;
+          document.getElementById("imgDetails3").src = objColombia.img.img3;
 
           break;
         case "rentiautos":
@@ -337,11 +337,11 @@
           document.getElementById("urlFront").innerText = objRentiAutos.urlFront;
           document.getElementById("urlFront").href = objRentiAutos.urlFront;
           document.getElementById("urlBack").innerText = objRentiAutos.urlBack;
-          document.getElementById("urlFront").href = objRentiAutos.urlFront;
+          document.getElementById("urlBack").href = objRentiAutos.urlBack;
           document.getElementById("description").innerText = objRentiAutos.description;
-          document.getElementById("").innerText = objColombia.img.img1;
-          document.getElementById("").innerText = objColombia.img.img2;
-          document.getElementById("").innerText = objColombia.img.img3;
+          document.getElementById("imgDetails1").src = objRentiAutos.img.img1;
+          document.getElementById("imgDetails2").src = objRentiAutos.img.img2;
+          document.getElementById("imgDetails3").src = objRentiAutos.img.img3;
           break;
       }
 
