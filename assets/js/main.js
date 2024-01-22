@@ -273,7 +273,7 @@
     img: {
       img1: "./assets/img/portfolio/colombia-details.png",
       img2: "./assets/img/portfolio/colombia-details2.png",
-      img3: "./assets/img/portfolio/web-colombia.png",
+      img3: "./assets/img/portfolio/colombia-details3.png",
     },
     category: "Web App",
     client: "NA - Uso personal",
