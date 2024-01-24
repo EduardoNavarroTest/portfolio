@@ -7,9 +7,6 @@ Whatsapp: https://api.whatsapp.com/send?phone=573135880136
 
 
 Pendientes:
-
-Portafolio la tercera imagen no se visualiza por qué?
 Arreglar envio email
 Arreglar inteligencia artificial
-Footer de todas las 3 páginas
 Foto profesional
