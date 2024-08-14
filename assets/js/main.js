@@ -368,7 +368,7 @@
 
   // Asignar manejadores de eventos a cada imagen
   html.addEventListener("click", function () {
-    updateProgress("HTML", 80);
+    updateProgress("HTML", 90);
   });
 
   css.addEventListener("click", function () {
@@ -376,19 +376,31 @@
   });
 
   javascript.addEventListener("click", function () {
-    updateProgress("JavaScript", 85);
+    updateProgress("JavaScript", 90);
   });
 
   react.addEventListener("click", function () {
-    updateProgress("React", 50);
+    updateProgress("React", 80);
   });
 
   boostrap.addEventListener("click", function () {
     updateProgress("Boostrap", 70);
   });
 
+  tailwind.addEventListener("click", function () {
+    updateProgress("Tailwind", 50);
+  });
+
   sass.addEventListener("click", function () {
     updateProgress("SASS", 60);
+  });
+
+  node.addEventListener("click", function () {
+    updateProgress("Node", 75);
+  });
+
+  express.addEventListener("click", function () {
+    updateProgress("Express", 75);
   });
 
   java.addEventListener("click", function () {
@@ -405,6 +417,14 @@
 
   sql.addEventListener("click", function () {
     updateProgress("SQL", 95);
+  });
+
+  mongo.addEventListener("click", function () {
+    updateProgress("Mongo DB", 70);
+  });
+
+  ia.addEventListener("click", function () {
+    updateProgress("API Integracion IA", 70);
   });
 
   git.addEventListener("click", function () {
