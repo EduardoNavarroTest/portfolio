@@ -447,6 +447,10 @@
     updateProgress("Selenium", 50);
   });
 
+  postman.addEventListener("click", function () {
+    updateProgress("Postman", 70);
+  });
+
 
 
 })()
